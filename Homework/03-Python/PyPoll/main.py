@@ -67,7 +67,7 @@ def get_voting_data():
     print("----------------------------")
 
     # Write to text file  
-    file1 = open("./analysis/results.txt","w")
+    file1 = open("./analysis/DGarcia_results.txt","w")
     file1.write("Election Results\n")       
     file1.write("----------------------------\n")
     file1.write(f"Total Votes: {total_votes}\n")

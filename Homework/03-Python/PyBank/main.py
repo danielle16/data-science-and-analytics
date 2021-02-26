@@ -48,7 +48,7 @@ def get_bank_data():
     print(f"Greatest Decrease in Profits: {profitInMonths} ({decreaseInProfits})")
 
     # Write to text file  
-    file1 = open("./analysis/results.txt","w")
+    file1 = open("./analysis/DGarcia_results.txt","w")
     file1.write("Financial Analysis\n")
     file1.write("----------------------------\n")
     file1.write(f"Total Months: {totalMonths}\n")
