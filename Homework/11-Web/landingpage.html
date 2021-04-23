@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary | Latitude vs. X</title>
+
+    <!-- Bring in our bootstrap stylesheet with integrity checking. Confirmed using SRI Hash Generator -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <!-- Initiate a container for LandingPage, then rows and columns-->
+    <div class="inline">
+        <span class="nav" onclick="openNav()">&#9776; Latitude</span>
+        <h1 class="title">Summary: Latitude vs. X</h1></div>
+        <hr>
+        <!-- <div class="container"> -->
+            <div class="row">
+                    <!-- <div class="col-md-2 col-sm-2 col-lg-2"></div> -->
+                    <div class="col-sm-5 col-md-5 col-lg-5">
+                    <img id="a1" src="./images/comparison-lg.png" height=405px width=500px />
+                    <!-- <h2 class="section-title"></h2> -->
+                    <p>The purpose of this project was to analyze how weather changes as you get close to the equator. To accomplish
+                        this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500
+                        cities.
+                    </p>
+                    <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+                        Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides
+                        the source data and visualizations created as part of the analysis, as well as explanations and descriptions
+                        of any trends and correlations witnessed.
+                    </p></div>
+                    <div class="col-md-1 col-sm-1 col-lg-1"></div>
+                        <div class="col-md-4 col-sm-4 col-lg-4 section-container">
+                            <h2 class="section-title">Visualizations</h2>
+                            <hr>
+                        <img id="a1" src="./images/Fig1.png" height=305px width=300px />
+                        <img id="a1" src="./images/Fig2.png" height=305px width=300px />
+                        <img id="a1" src="./images/Fig3.png" height=305px width=300px />
+                        <img id="a1" src="./images/Fig4.png" height=305px width=300px />
+                        </div>
+            </div>
+        <!-- Side Navbar -->
+        <div class="container">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a class="nav-item nav-link" href="landingpage.html">Landing Page</a>
+                <a class="nav-item nav-link" href="visualizations.html">Visualizations</a>
+                <a class="nav-item nav-link" href="comparisions.html">Comparisions</a>
+                <a class="nav-item nav-link" href="data.html">Data</a>
+            </div>
+        </div>
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+</body>
+
+</html>
