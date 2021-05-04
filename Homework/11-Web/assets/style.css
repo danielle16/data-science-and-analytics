@@ -17,11 +17,32 @@ body {
     margin: 10px; 
 }
 
+.navbar-brand {
+    color: #17a2b8 !important;
+}
+
+a {
+    color: rgba(0,0,0,.5);
+}
+
 .section-container {
     background-color: white; 
     height: 800px;
     margin: 20px;
 }
+
+.section1-container {
+    background-color: white; 
+    height: 600px;
+    margin: 15px;
+}
+
+.section2-container {
+    background-color: white; 
+    height: 500px;
+    margin: 15px;
+}
+
 
 .section-title {
     color: #17a2b8;

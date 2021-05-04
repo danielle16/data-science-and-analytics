@@ -35,8 +35,7 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Plots
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -59,37 +58,35 @@
         <div class="col-md-2 col-sm-2 col-lg-2">
         </div>
         <div class="col-md-8 col-sm-8 col-lg-8 section-container">
-            <h2 class="section-title">Data</h2>
+            <h2 class="section-title">Comparison: Latitude vs X</h2>
             <hr>
-            <p>The following table includes all of the data for plotting during this project.</p>
-
+            <p>Click any plot to get an in-depth analysis.</p>
             <div class="row">
-                <img class="col-md-12 col-sm-12 col-lg-12" id="a1" src="./images/cities.png" height=650px width=900px />
+                <!-- <span class="section-title">vs. Max Temperature</span> -->
+                <a class="col-sm-6 col-md-6 col-lg-6" href="/maxTemp.html">
+                    <img id="a1" src="./images/Fig1.png" height=250px width=400px />
+                </a>
+                <!-- <span class="section-title">vs. Max Temperature</span> -->
+                <a class="col-sm-6 col-md-6 col-lg-6" href="/humidity.html">
+                    <img id="a1" src="./images/Fig2.png" height=250px width=400px />
+                </a>
+            </div>
+            <div class="row">
+                <!-- <h4 class="section-title">vs. Max Temperature</h4> -->
+                <a class="col-sm-6 col-md-6 col-lg-6" href="/cloudiness.html">
+                    <img id="a1" src="./images/Fig3.png" height=250px width=400px />
+                </a>
+                <!-- <h4 class="section-title">vs. Max Temperature</h4> -->
+                <a class="col-sm-6 col-md-6 col-lg-6" href="/windSpeed.html">
+                    <img id="a1" src="./images/Fig4.png" height=250px width=400px />
+                </a>
             </div>
         </div>
-        <div class="col-md-2 col-sm-2 col-lg-2"></div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
-    <script type="text/javascript" src="js/jquery.csvToTable.js"></script>
-    <script type="text/javascript" src="js/jquery.tablesorter.dev.js"></script>
-    <script>
-            $(function() {
-                $.get('example.csv', function(data) {
-                    $('#CSVSource').html('<pre>' + data + '</pre>');
-                });
-                $('#CSVTable').CSVToTable('./images/cities.csv', { loadingImage: 'images/loading.gif', startLine: 0 });
-                $.get('test.tsv', function(data) {
-                    $('#TSVSource').html('<pre>' + data + '</pre>');
-                });
-                $('#TSVTable').CSVToTable('test.tsv', { loadingText: 'Loading TSV Data...', loadingImage: 'images/loading.gif', startLine: 0, separator: "t" });
-                $('#CSVTable2').CSVToTable('example.csv', { loadingImage: 'images/loading.gif', startLine: 1, headers: ['Album Title', 'Artist Name', 'Price ($USD)'] }).bind("loadComplete",function() { 
-                    $('#CSVTable2').find('TABLE').tablesorter();
-                });;
-            });
-            </script>
+    <div class="col-md-2 col-sm-2 col-lg-2"></div>
+    </div>
+
+    
 </body>
 
 </html>
