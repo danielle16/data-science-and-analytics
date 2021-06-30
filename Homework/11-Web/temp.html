@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Cloudiness</title>
+  <title>Temperature</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -28,9 +28,9 @@
                             Plots
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="temp.html">Max Temperature</a>
+                            <a class="dropdown-item active btn-info" href="temp.html">Max Temperature</a>
                             <a class="dropdown-item" href="humidity.html">Humidity</a>
-                            <a class="dropdown-item active btn-info" href="cloudiness.html">Cloudiness</a>
+                            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
                             <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
                         </div>
                     </li>
@@ -42,36 +42,36 @@
                     </li>
                 </ul>
             </div>
-        </div> 
+        </div>
     </nav>
-    <!--cloudiness content adjustments-->
+    <!--temprature content adjustments-->
     <div class="container content">
         <div class="row">
             <div class="col-md-8">
                 <div class="col-md-12">
-                    <h3>Cloudiness</h3>
+                    <h3>Max Temperature</h3>
                     <hr>
-                    <a href="assets/images/Fig3.png" target="_blank"><img src="assets/images/Fig3.png" width="100%" alt="cloudiness"></a>
+                    <a href="assets/images/Fig1.png" target="_blank"><img src="assets/images/Fig1.png" width="100%" alt="temperature"></a>
                     <br>
-                    <p>This plot doesn't necessarily show any trend between latitude and cloudiness. We can't say cloudiness increase or decrease when latitude get closer to the equator. Clouds tend to form in abundance in the middle latitudes 60 degrees north and south of the equator. This is where the edges of polar and mid latitude circulation cells collide and push air upward. </p>
+                    <p>As expected, the weather becomes significantaly warmer as one approaches the equator (Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of the year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.</p>
                 </div>
             </div>
-            <!--visualizations container adjustments-->
+            <!--visualizations container -->
             <div class="col-md-4">
                 <div class="col-md-12">
                     <h3>Visualizations</h3>
                     <hr>
                     <div class="row">
                         <div class="col-3 col-md-6">
-                            <a href="temp.html"><img src="assets/images/Fig1.png" width="100%" alt="temprature"></a>
+                            <a href="temp.html"><img class="img" src="assets/images/Fig1.png" width="100%" alt="temprature"></a>
                         </div>
-                       
+                        
                         <div class="col-3 col-md-6">
                             <a href="humidity.html"><img src="assets/images/Fig2.png" width="100%" alt="humidity"></a>
                         </div>
                     
                         <div class="col-3 col-md-6">
-                            <a href="cloudiness.html"><img class="img" src="assets/images/Fig3.png" width="100%" alt="cloudiness"></a>
+                            <a href="cloudiness.html"><img src="assets/images/Fig3.png" width="100%" alt="cloudiness"></a>
                         </div>
                         
                         <div class="col-3 col-md-6">
